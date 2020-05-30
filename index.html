@@ -1,0 +1,59 @@
+---
+layout: default
+---
+{% include hero.html %}
+
+<div class="container">
+	<div class="row">
+		<div class="col col-12">
+			<h4>test</h4>
+		</div>
+		<div class="col-sm">
+			<iframe title="A 3D model" width="280" height="180" src="https://sketchfab.com/models/9019efde7cbd4b59b64d235c41a8bbc8/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                  <a href="https://sketchfab.com/3d-models/statue-of-liberty-9019efde7cbd4b59b64d235c41a8bbc8?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Statue of Liberty</a>
+                  by <a href="https://sketchfab.com/Mesheritage?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Mesheritage</a>
+                  on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+              </p>
+		</div>
+		<div class="col-sm">
+			<iframe title="A 3D model" width="280" height="180" src="https://sketchfab.com/models/9019efde7cbd4b59b64d235c41a8bbc8/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                  <a href="https://sketchfab.com/3d-models/statue-of-liberty-9019efde7cbd4b59b64d235c41a8bbc8?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Statue of Liberty</a>
+                  by <a href="https://sketchfab.com/Mesheritage?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Mesheritage</a>
+                  on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+              </p>
+		</div>
+		<div class="col-sm">
+			<iframe title="A 3D model" width="280" height="180" src="https://sketchfab.com/models/9019efde7cbd4b59b64d235c41a8bbc8/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                  <a href="https://sketchfab.com/3d-models/statue-of-liberty-9019efde7cbd4b59b64d235c41a8bbc8?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Statue of Liberty</a>
+                  by <a href="https://sketchfab.com/Mesheritage?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Mesheritage</a>
+                  on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+              </p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col col-12">
+			{% if site.posts.size > 0 %}
+				<h4 class="lates-title">Latest Posts</h4>
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+	{% if site.posts.size > 0 %}
+		{% for post in paginator.posts %}
+		<div class="col col-12">
+			{% include article-content.html %}
+		</div>
+		{% endfor %}
+	{% endif %}
+	</div>
+</div>
+{% include pagination.html %}
